@@ -12,12 +12,12 @@ public class App {
         System.out.println(new App().getGreeting());
     }
 
-    public static boolean anyModZero(int [ ] array, int e) {
+    public static boolean anyModZero(int [ ] array, int e,int a,int b) {
         System.out.println("inside search");
         if (array == null) return false;
-  
+        
         for (int elt : array) {
-          if ((elt % e)==0) return true;
+          if ((elt % (e+a+b))==0) return true;
         }
         return false;
       }

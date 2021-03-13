@@ -14,24 +14,24 @@ class AppTest {
     @Test
     public void testFound() {
        int[] array = new int[]{1,5,9,8};
-       assertTrue(App.anyModZero(array, 4));
+       assertTrue(App.anyModZero(array, 2,1,1));
      }
  
      @Test
      public void testNotFound() {
        int[] array = new int[]{1,5,9,7};
-       assertFalse(App.anyModZero(array, 4));
+       assertFalse(App.anyModZero(array, 2,1,1));
      }
  
      @Test
      public void testEmptyArray() {
        int array[] = new int[0];
-       assertFalse(App.anyModZero(array, 1));
+       assertFalse(App.anyModZero(array, 1,3,7));
      }
  
      @Test
      public void testNull() {
-       assertFalse(App.anyModZero(null, 1));
+       assertFalse(App.anyModZero(null, 1,5,4));
      }
  
 }
